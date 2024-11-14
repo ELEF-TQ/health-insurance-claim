@@ -1,7 +1,14 @@
 package com.ensa.mutuelle.model;
 
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
+@Entity
+@Getter
+@Setter
 public class Dossier {
     private String nomAssure;
     private String numeroAffiliation;
