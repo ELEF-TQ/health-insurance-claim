@@ -1,0 +1,483 @@
+[
+  {
+    "nomAssure": "Ibrahimi",
+    "numeroAffiliation": "AFF123456",
+    "immatriculation": "IMM098765",
+    "lienParente": "fils",
+    "montantTotalFrais": 150.0,
+    "prixConsultation": 50.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Omar",
+    "dateDepotDossier": "2024-11-10",
+    "traitements": [
+      {
+        "codeBarre": "1234567890",
+        "existe": true,
+        "nomMedicament": "Paracétamol",
+        "typeMedicament": "Antalgique",
+        "prixMedicament": 5.0
+      },
+      {
+        "codeBarre": "0987654321",
+        "existe": false,
+        "nomMedicament": "Ibuprofène",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 8.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Farouk",
+    "numeroAffiliation": "AFF654321",
+    "immatriculation": "IMM123098",
+    "lienParente": "épouse",
+    "montantTotalFrais": 200.0,
+    "prixConsultation": 60.0,
+    "nombrePiecesJointes": 2,
+    "nomBeneficiaire": "Samira",
+    "dateDepotDossier": "2024-11-11",
+    "traitements": [
+      {
+        "codeBarre": "1122334455",
+        "existe": true,
+        "nomMedicament": "Amoxicilline",
+        "typeMedicament": "Antibiotique",
+        "prixMedicament": 12.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Haddad",
+    "numeroAffiliation": "AFF987654",
+    "immatriculation": "IMM567890",
+    "lienParente": "époux",
+    "montantTotalFrais": 300.0,
+    "prixConsultation": 100.0,
+    "nombrePiecesJointes": 4,
+    "nomBeneficiaire": "Leila",
+    "dateDepotDossier": "2024-11-12",
+    "traitements": [
+      {
+        "codeBarre": "2233445566",
+        "existe": true,
+        "nomMedicament": "Cétirizine",
+        "typeMedicament": "Antihistaminique",
+        "prixMedicament": 10.0
+      },
+      {
+        "codeBarre": "7788990011",
+        "existe": true,
+        "nomMedicament": "Oméprazole",
+        "typeMedicament": "Antiacide",
+        "prixMedicament": 15.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Bensalah",
+    "numeroAffiliation": "AFF432198",
+    "immatriculation": "IMM654321",
+    "lienParente": "fille",
+    "montantTotalFrais": 250.0,
+    "prixConsultation": 80.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Salima",
+    "dateDepotDossier": "2024-11-13",
+    "traitements": [
+      {
+        "codeBarre": "9988776655",
+        "existe": false,
+        "nomMedicament": "Diclofénac",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 18.0
+      },
+      {
+        "codeBarre": "4455667788",
+        "existe": true,
+        "nomMedicament": "Metformine",
+        "typeMedicament": "Antidiabétique",
+        "prixMedicament": 20.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Chakib",
+    "numeroAffiliation": "AFF567890",
+    "immatriculation": "IMM432109",
+    "lienParente": "mère",
+    "montantTotalFrais": 180.0,
+    "prixConsultation": 70.0,
+    "nombrePiecesJointes": 2,
+    "nomBeneficiaire": "Nadia",
+    "dateDepotDossier": "2024-11-14",
+    "traitements": [
+      {
+        "codeBarre": "5566778899",
+        "existe": true,
+        "nomMedicament": "Simvastatine",
+        "typeMedicament": "Hypolipidémiant",
+        "prixMedicament": 25.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "AitElHadj",
+    "numeroAffiliation": "AFF001234",
+    "immatriculation": "IMM123456",
+    "lienParente": "épouse",
+    "montantTotalFrais": 1200.0,
+    "prixConsultation": 100.0,
+    "nombrePiecesJointes": 5,
+    "nomBeneficiaire": "Fatima",
+    "dateDepotDossier": "2024-11-01",
+    "traitements": [
+      {
+        "codeBarre": "1234509876",
+        "existe": true,
+        "nomMedicament": "Losartan",
+        "typeMedicament": "Antihypertenseur",
+        "prixMedicament": 15.0
+      },
+      {
+        "codeBarre": "9876543210",
+        "existe": false,
+        "nomMedicament": "Rosuvastatine",
+        "typeMedicament": "Hypolipidémiant",
+        "prixMedicament": 30.0
+      },
+      {
+        "codeBarre": "5678901234",
+        "existe": true,
+        "nomMedicament": "Aspirine",
+        "typeMedicament": "Anticoagulant",
+        "prixMedicament": 10.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Belkacem",
+    "numeroAffiliation": "AFF234567",
+    "immatriculation": "IMM678910",
+    "lienParente": "époux",
+    "montantTotalFrais": 850.0,
+    "prixConsultation": 90.0,
+    "nombrePiecesJointes": 4,
+    "nomBeneficiaire": "Kamel",
+    "dateDepotDossier": "2024-11-05",
+    "traitements": [
+      {
+        "codeBarre": "1234987650",
+        "existe": true,
+        "nomMedicament": "Lévothyrox",
+        "typeMedicament": "Hormonothérapie",
+        "prixMedicament": 8.0
+      },
+      {
+        "codeBarre": "8765432109",
+        "existe": true,
+        "nomMedicament": "Ramipril",
+        "typeMedicament": "Antihypertenseur",
+        "prixMedicament": 12.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Cherif",
+    "numeroAffiliation": "AFF345678",
+    "immatriculation": "IMM109876",
+    "lienParente": "fille",
+    "montantTotalFrais": 950.0,
+    "prixConsultation": 110.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Siham",
+    "dateDepotDossier": "2024-11-08",
+    "traitements": [
+      {
+        "codeBarre": "1122334455",
+        "existe": true,
+        "nomMedicament": "Acétaminophène",
+        "typeMedicament": "Antalgique",
+        "prixMedicament": 6.0
+      },
+      {
+        "codeBarre": "6677889900",
+        "existe": false,
+        "nomMedicament": "Alprazolam",
+        "typeMedicament": "Anxiolytique",
+        "prixMedicament": 20.0
+      },
+      {
+        "codeBarre": "3344556677",
+        "existe": true,
+        "nomMedicament": "Prednisone",
+        "typeMedicament": "Corticoïde",
+        "prixMedicament": 18.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Djebar",
+    "numeroAffiliation": "AFF456789",
+    "immatriculation": "IMM432109",
+    "lienParente": "mère",
+    "montantTotalFrais": 1450.0,
+    "prixConsultation": 150.0,
+    "nombrePiecesJointes": 6,
+    "nomBeneficiaire": "Lina",
+    "dateDepotDossier": "2024-11-12",
+    "traitements": [
+      {
+        "codeBarre": "2233445566",
+        "existe": true,
+        "nomMedicament": "Ibuprofène",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 10.0
+      },
+      {
+        "codeBarre": "4455667788",
+        "existe": false,
+        "nomMedicament": "Métronidazole",
+        "typeMedicament": "Antibiotique",
+        "prixMedicament": 25.0
+      },
+      {
+        "codeBarre": "5566778899",
+        "existe": true,
+        "nomMedicament": "Clopidogrel",
+        "typeMedicament": "Anticoagulant",
+        "prixMedicament": 35.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Elarabi",
+    "numeroAffiliation": "AFF567890",
+    "immatriculation": "IMM987654",
+    "lienParente": "fils",
+    "montantTotalFrais": 1750.0,
+    "prixConsultation": 120.0,
+    "nombrePiecesJointes": 7,
+    "nomBeneficiaire": "Rachid",
+    "dateDepotDossier": "2024-11-15",
+    "traitements": [
+      {
+        "codeBarre": "6677889900",
+        "existe": true,
+        "nomMedicament": "Oméprazole",
+        "typeMedicament": "Antiacide",
+        "prixMedicament": 15.0
+      },
+      {
+        "codeBarre": "7788990011",
+        "existe": false,
+        "nomMedicament": "Diclofénac",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 18.0
+      },
+      {
+        "codeBarre": "8899001122",
+        "existe": true,
+        "nomMedicament": "Metformine",
+        "typeMedicament": "Antidiabétique",
+        "prixMedicament": 20.0
+      },
+      {
+        "codeBarre": "9900112233",
+        "existe": true,
+        "nomMedicament": "Atorvastatine",
+        "typeMedicament": "Hypolipidémiant",
+        "prixMedicament": 28.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Fekir",
+    "numeroAffiliation": "AFF678901",
+    "immatriculation": "IMM123987",
+    "lienParente": "mère",
+    "montantTotalFrais": 2200.0,
+    "prixConsultation": 130.0,
+    "nombrePiecesJointes": 8,
+    "nomBeneficiaire": "Hind",
+    "dateDepotDossier": "2024-11-20",
+    "traitements": [
+      {
+        "codeBarre": "1100223344",
+        "existe": true,
+        "nomMedicament": "Fluoxetine",
+        "typeMedicament": "Antidépresseur",
+        "prixMedicament": 12.0
+      },
+      {
+        "codeBarre": "2233445566",
+        "existe": true,
+        "nomMedicament": "Cétirizine",
+        "typeMedicament": "Antihistaminique",
+        "prixMedicament": 10.0
+      },
+      {
+        "codeBarre": "3344556677",
+        "existe": true,
+        "nomMedicament": "Lisinopril",
+        "typeMedicament": "Antihypertenseur",
+        "prixMedicament": 18.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Benhamou",
+    "numeroAffiliation": "AFF789123",
+    "immatriculation": "IMM112233",
+    "lienParente": "fille",
+    "montantTotalFrais": 1600.0,
+    "prixConsultation": 90.0,
+    "nombrePiecesJointes": 4,
+    "nomBeneficiaire": "Amel",
+    "dateDepotDossier": "2024-11-06",
+    "traitements": [
+      {
+        "codeBarre": "9988776655",
+        "existe": false,
+        "nomMedicament": "Lévothyrox",
+        "typeMedicament": "Hormonothérapie",
+        "prixMedicament": 12.0
+      },
+      {
+        "codeBarre": "6655443322",
+        "existe": true,
+        "nomMedicament": "Ramipril",
+        "typeMedicament": "Antihypertenseur",
+        "prixMedicament": 15.0
+      },
+      {
+        "codeBarre": "2233441122",
+        "existe": true,
+        "nomMedicament": "Ibuprofène",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 8.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Cherkaoui",
+    "numeroAffiliation": "AFF654789",
+    "immatriculation": "IMM445566",
+    "lienParente": "époux",
+    "montantTotalFrais": 1350.0,
+    "prixConsultation": 85.0,
+    "nombrePiecesJointes": 6,
+    "nomBeneficiaire": "Karim",
+    "dateDepotDossier": "2024-11-07",
+    "traitements": [
+      {
+        "codeBarre": "7788990011",
+        "existe": true,
+        "nomMedicament": "Metformine",
+        "typeMedicament": "Antidiabétique",
+        "prixMedicament": 20.0
+      },
+      {
+        "codeBarre": "3344556677",
+        "existe": false,
+        "nomMedicament": "Diclofénac",
+        "typeMedicament": "Anti-inflammatoire",
+        "prixMedicament": 18.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Djellouli",
+    "numeroAffiliation": "AFF123678",
+    "immatriculation": "IMM556677",
+    "lienParente": "fils",
+    "montantTotalFrais": 1800.0,
+    "prixConsultation": 120.0,
+    "nombrePiecesJointes": 7,
+    "nomBeneficiaire": "Mehdi",
+    "dateDepotDossier": "2024-11-14",
+    "traitements": [
+      {
+        "codeBarre": "4455667788",
+        "existe": true,
+        "nomMedicament": "Oméprazole",
+        "typeMedicament": "Antiacide",
+        "prixMedicament": 15.0
+      },
+      {
+        "codeBarre": "1100223344",
+        "existe": true,
+        "nomMedicament": "Simvastatine",
+        "typeMedicament": "Hypolipidémiant",
+        "prixMedicament": 25.0
+      },
+      {
+        "codeBarre": "2233445566",
+        "existe": false,
+        "nomMedicament": "Amoxicilline",
+        "typeMedicament": "Antibiotique",
+        "prixMedicament": 10.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "ElKhaldi",
+    "numeroAffiliation": "AFF890123",
+    "immatriculation": "IMM778899",
+    "lienParente": "épouse",
+    "montantTotalFrais": 1100.0,
+    "prixConsultation": 95.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Rania",
+    "dateDepotDossier": "2024-11-17",
+    "traitements": [
+      {
+        "codeBarre": "9900112233",
+        "existe": true,
+        "nomMedicament": "Paracétamol",
+        "typeMedicament": "Antalgique",
+        "prixMedicament": 6.0
+      },
+      {
+        "codeBarre": "8899001122",
+        "existe": true,
+        "nomMedicament": "Cétirizine",
+        "typeMedicament": "Antihistaminique",
+        "prixMedicament": 10.0
+      }
+    ]
+  },
+  {
+    "nomAssure": "Fellahi",
+    "numeroAffiliation": "AFF543210",
+    "immatriculation": "IMM889900",
+    "lienParente": "mère",
+    "montantTotalFrais": 1750.0,
+    "prixConsultation": 125.0,
+    "nombrePiecesJointes": 8,
+    "nomBeneficiaire": "Zohra",
+    "dateDepotDossier": "2024-11-19",
+    "traitements": [
+      {
+        "codeBarre": "7788990011",
+        "existe": false,
+        "nomMedicament": "Aspirine",
+        "typeMedicament": "Anticoagulant",
+        "prixMedicament": 12.0
+      },
+      {
+        "codeBarre": "5566778899",
+        "existe": true,
+        "nomMedicament": "Oméprazole",
+        "typeMedicament": "Antiacide",
+        "prixMedicament": 18.0
+      },
+      {
+        "codeBarre": "2233445566",
+        "existe": true,
+        "nomMedicament": "Lévothyrox",
+        "typeMedicament": "Hormonothérapie",
+        "prixMedicament": 10.0
+      }
+    ]
+  }
+]

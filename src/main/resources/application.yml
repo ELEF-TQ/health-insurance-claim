@@ -1,23 +1,37 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/insurance
-    username: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: jdbc:postgresql://localhost:6000/batch_mutuelle_db
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: update # Peut �tre 'validate' ou 'create-drop' selon vos besoins
+    show-sql: true # Affiche les requ�tes SQL dans les logs
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-
+        format_sql: true # Formate les requ�tes SQL dans les logs
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   batch:
+    jdbc:
+      initialize-schema: always
     job:
-      enabled: true
+      enabled: false
 
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
 
+logging:
+  level:
+    org:
+      springframework:
+        batch: DEBUG # Active les logs pour Spring Batch
+      hibernate: INFO
 
-
-  main:
-    allow-bean-definition-overriding: true
+# Emplacement des ressources
+file:
+  input:
+    path: src/main/resources/dossiers.json
