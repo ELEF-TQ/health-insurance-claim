@@ -24,11 +24,24 @@ spring:
     locations: classpath:db/migration
     baseline-on-migrate: true
 
+# actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+
+
 logging:
   level:
     org:
       springframework:
-        batch: DEBUG # Active les logs pour Spring Batch
+        batch: DEBUG
       hibernate: INFO
 
 # Emplacement des ressources
