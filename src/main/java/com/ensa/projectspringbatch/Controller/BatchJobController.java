@@ -14,7 +14,7 @@ public class BatchJobController {
     private BatchJobService batchJobService;
 
     // API REST pour démarrer le job batch
-    @PostMapping("/run-batch-job")
+    @PostMapping("/run")
     public String runBatchJob() {
         return batchJobService.runJob();
     }

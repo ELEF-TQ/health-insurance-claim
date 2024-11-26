@@ -5,11 +5,14 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.batch.item.support.CompositeItemProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 
 @Component
 @RequiredArgsConstructor
+@Transactional(propagation = Propagation.REQUIRES_NEW, rollbackFor = Exception.class)
 public class CompositeProcessor {
 
     private final ValidationProcessor validationProcessor;

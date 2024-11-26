@@ -1,7 +1,7 @@
 package com.ensa.projectspringbatch.Config;
 
-import com.ensa.projectspringbatch.Exception.NonRecoverableException;
-import com.ensa.projectspringbatch.Exception.RecoverableException;
+import com.ensa.projectspringbatch.Listener.CustomRetryListener;
+import com.ensa.projectspringbatch.Listener.CustomSkipListener;
 import com.ensa.projectspringbatch.Model.Dossier;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -31,12 +31,6 @@ public class BatchConfig {
     @Autowired
     private DataSource dataSource;
 
-    @Autowired
-    private RetryConfig retryConfig;
-
-    @Autowired
-    private SkipConfig skipConfig;
-
     @Bean
     public Job mutuelleJob(Step processStep) throws Exception {
         return new JobBuilder("mutuelleJob", jobRepository())
@@ -55,11 +49,12 @@ public class BatchConfig {
                 .processor(processor)
                 .writer(writer)
                 .faultTolerant()
-                .retry(RecoverableException.class) // Retry on recoverable exceptions
-                .retryLimit(3) // Retry limit
-                .skip(NonRecoverableException.class) // Skip non-recoverable exceptions
-                .skipLimit(5) // Skip limit
-                .listener(skipConfig.skipListener()) // Add the skip listener here
+                .retry(Exception.class)
+                .retryLimit(3)
+                .skip(Exception.class)
+                .skipLimit(10)
+                .listener(new CustomRetryListener())
+                .listener(new CustomSkipListener())
                 .build();
     }
 
@@ -77,7 +72,7 @@ public class BatchConfig {
         return factory.getObject();
     }
 
-    @Bean(name = "jobLauncher")
+    @Bean(name = "joblancher")
     public JobLauncher jobLauncher() throws Exception {
         TaskExecutorJobLauncher jobLauncher = new TaskExecutorJobLauncher();
         jobLauncher.setJobRepository(jobRepository());

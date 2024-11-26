@@ -1,5 +1,6 @@
 package com.ensa.projectspringbatch.Model;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Traitement {
+
 
     private String codeBarre;
     private boolean existe;

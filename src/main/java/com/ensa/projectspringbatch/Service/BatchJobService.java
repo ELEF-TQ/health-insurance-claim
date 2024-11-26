@@ -10,17 +10,15 @@ import org.springframework.stereotype.Service;
 public class BatchJobService {
 
     @Autowired
-    private JobLauncher jobLauncher; // Injecter le JobLauncher
+    private JobLauncher jobLauncher;
     @Autowired
-    private Job mutuelleJob; // Injecter le job
+    private Job mutuelleJob;
 
-    // Méthode pour exécuter le job
     public String runJob() {
         try {
             JobParameters jobParameters = new JobParametersBuilder()
                     .addLong("time", System.currentTimeMillis())
                     .toJobParameters();
-            // Démarrer le job avec des paramètres (si nécessaire)
             JobExecution jobExecution = jobLauncher.run(mutuelleJob, jobParameters);
             return "Le job a démarré avec succès. Statut : " + jobExecution.getStatus();
         } catch (JobExecutionException e) {

@@ -1,5 +1,7 @@
 package com.ensa.projectspringbatch.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,8 +12,8 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Dossier {
 
+public class Dossier {
     private String nomAssure;
     private String numeroAffiliation;
     private String immatriculation;
@@ -22,8 +24,9 @@ public class Dossier {
     private String nomBeneficiaire;
     private LocalDate dateDepotDossier;
     private List<Traitement> traitements;
-
-    // Attributs pour le remboursement
     private double montantRemboursementConsultation;
     private double montantRemboursement;
+
+
+
 }

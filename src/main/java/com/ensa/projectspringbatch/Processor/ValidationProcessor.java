@@ -4,8 +4,12 @@ import com.ensa.projectspringbatch.Exception.ValidationException;
 import com.ensa.projectspringbatch.Model.Dossier;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Component
+@Transactional(propagation = Propagation.REQUIRES_NEW, rollbackFor = Exception.class)
+
 public class ValidationProcessor implements ItemProcessor<Dossier, Dossier> {
 
     @Override
